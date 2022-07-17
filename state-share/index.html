@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>l-freeze | Web Components | fetch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="title">コンポーネント間での共有メモリ</h1>
+    </div>
+    <div>
+        <l-freeze-state-01 sharedObjectName="share" isUpdate="">
+            コンポーネント１
+        </l-freeze-state-01>    
+    </div>
+    <div>
+        <l-freeze-state-01 sharedObjectName="share" isUpdate="">
+            コンポーネント１パート２
+        </l-freeze-state-01>    
+    </div>
+    <div>
+        <l-freeze-state-02 sharedObjectName="share" isUpdate="">
+            コンポーネント２
+        </l-freeze-state-02>
+    </div>
+    <div>
+        <l-freeze-state-03 sharedObjectName="share" isUpdate="">
+            コンポーネント３
+        </l-freeze-state-03>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
