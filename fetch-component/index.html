@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>l-freeze | Web Components | fetch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="title">住所逆引き</h1>
+    </div>
+    <div>
+        <l-freeze-input searchCode="default" inputStyle="
+            input{
+                background-color: aquamarine;
+                color: blue;
+            }
+        ">
+            郵便番号を入力してください
+        </l-freeze-input>    
+    </div>
+    <div>
+        <l-freeze-result result=''>
+            逆引き結果
+        </l-freeze-result>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

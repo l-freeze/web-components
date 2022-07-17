@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>l-freeze | Web Components</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <text-decoration>
+        <h1>chromeの設定</h1>
+        <div>show user agent shadow domにチェック</div>
+        <div>（chromeならね）</div>
+    </text-decoration>
+    <hr>
+    <shadow-dom-component property_suffix="_suffix">
+        shadow-domガチ勢
+    </shadow-dom-component>
+    <script>
+        document.querySelector('shadow-dom-component').onclick = (e) => {
+            console.log(e.target.innerHTML);
+            console.log(e.target.shadowRoot.innerHTML);
+        };
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
